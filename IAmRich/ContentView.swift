@@ -1,21 +1,23 @@
-//
-//  ContentView.swift
-//  IAmRich
-//
-//  Created by Sun Asterisk Philippines on 7/30/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack{
+            Color.black.edgesIgnoringSafeArea(.all)
+            VStack {
+                Spacer()
+                Image("gem")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200)
+                    .padding()
+                Text("I Am Rich")
+                    .font(.largeTitle)
+                    .aspectRatio(contentMode: .fit)
+                    .foregroundColor(.white)
+                Spacer()
+            }
         }
-        .padding()
     }
 }
 
